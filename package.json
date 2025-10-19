@@ -2,8 +2,12 @@
   "name": "to-do-list-js",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://YahiaAshraf-CS.github.io/to-do-list",
+  "description": "A simple to-do list app built with React and Vite",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -11,6 +15,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
